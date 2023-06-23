@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(70, 40, 61), rgb(135, 120, 36));
+}
+
+.overall{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#gameboard{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); */
+    width: 400px;
+    height:400px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: -1px 1px 19px 3px;
+    
+}
+
+.player-turn{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#info-display{
+    display: none;
+    font-size: 17px;
+    font-weight: 900;
+    background-color: red;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+    height: 40px;
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+}
+
+.square svg{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    position: relative;
+    z-index: -9;
+}
+
+path{
+    position: relative;
+    z-index: -10;
+}
+
+.piece{
+    position: relative;
+    z-index: 10;
+}
+
+.beige{
+    background-color: rgb(141, 141, 129);
+}
+
+.brown{
+    background-color: brown;
+}
+
+.black{
+    fill: rgb(17, 13, 13);
+}
+
+.white{
+    fill: white;
+}
